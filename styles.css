@@ -9,10 +9,10 @@ body {
   width: 95%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (170px)[5];
-      grid-template-columns: repeat(5, 170px);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-columns: (170px)[2];
+      grid-template-columns: repeat(2, 170px);
+  -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
 }
 
 .plaatje {
@@ -79,5 +79,31 @@ body {
 
 #zoek-film-titel {
   font-size: 20px;
+}
+
+@media (min-width: 700px) {
+  #filmLijst {
+    height: 70%;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (170px)[3];
+        grid-template-columns: repeat(3, 170px);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #filmLijst {
+    height: 70%;
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (170px)[5];
+        grid-template-columns: repeat(5, 170px);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

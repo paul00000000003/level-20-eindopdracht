@@ -9,8 +9,8 @@ body {
     height: 70%;
     width: 95%;
     display: grid;
-    grid-template-columns: repeat(5, 170px);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(15, 1fr);
 }
 
 .plaatje {
@@ -66,4 +66,24 @@ body {
 
 #zoek-film-titel {
     font-size: $fontsize;
+}
+
+@media (min-width: 700px) {
+    #filmLijst {
+        height: 70%;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3, 170px);
+        grid-template-rows: repeat(10, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #filmLijst {
+        height: 70%;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(5, 170px);
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
