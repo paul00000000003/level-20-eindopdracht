@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Filmzoeker</title>
+    <script defer src="movies.js"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body onload="checkFilmInhoud()">
+    <nav id="Filmkeuze">
+        <div class="Filmkeuze">
+            <h1 id="filmHeading">Filmkeuze : </h1>
+            <ul>
+                <li><input type="radio" class="radio" name="film-filter" value="recent" /><label class="label">Selecteer alle recente films (na 2014)</label></li>
+                <li><input type="radio" class="radio" name="film-filter" value="avengers" /><label class="label">Selecteer alle films met Avengers in de titel</label></li>
+                <li><input type="radio" class="radio" name="film-filter" value="x-men" /><label class="label">Selecteer alle films met X-men in de titel</label></li>
+                <li><input type="radio" class="radio" name="film-filter" value="princess" /><label class="label">Selecteer alle films met Princess in de titel</label></li>
+                <li><input type="radio" class="radio" name="film-filter" value="batman" /><label class="label">Selecteer alle films met Batman in de titel</label></li>
+            </ul>
+        </div>
+        <div class="Filmkeuze" id="zoek-titel-container">
+            <div class="linkerUitlijning">
+            </div>
+            <div>
+                <h1>Filmkeuze op basis van (woord(-en) uit) titel : </h1>
+                <input type="text" id="film-titel" />
+                <!-- Ik heb een button gemaakt zodat de gebruiker op de knop drukt als hij een film zoekt
+                    alternatief zou zijn om met focusout te werken. Dan wordt ook de gehele input gepakt, maar dat 
+                    voelt voor mij minder logisch aan -->
+                <button id="zoek-film-titel">zoek film</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="Container">
+            <div class="linkerUitlijning"></div>
+            <ul id="filmLijst"></ul>
+        </div>
+    </main>
+</body>
+
+</html>
