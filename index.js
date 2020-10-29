@@ -5,7 +5,11 @@ function addMoviesToDom(filmSelectie) {
     let filmLijst = document.getElementById("filmLijst");
     filmLijst.innerHTML = "";
     let basisref = "https://www.imdb.com/title/";
-    let lis = filmSelectie.map(element => { return '<li><a href="' + basisref + element.imdbID + '"><img src="' + element.Poster + '" width="100% alt="' + element.Title + '"/></a></li>' });
+    let lis = filmSelectie.map(element => {
+        let refDeelOpenen = '<a href="' + basisref + element.imdbID + '">';
+        let plaatjesdeel = '<img src="' + element.Poster + '" width="100% alt="' + element.Title + '"/>';
+        return '<li>' + refDeelOpenen + plaatjesdeel + '</a></li>'
+    });
     lis.forEach(element => filmLijst.innerHTML += element);
     let plaatjes = document.getElementsByTagName("img");
     let plaatjesArr = Array.from(plaatjes);

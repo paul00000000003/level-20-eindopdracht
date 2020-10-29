@@ -6,7 +6,7 @@ body {
 
 #filmLijst {
   height: 70%;
-  width: 93%;
+  width: 95%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (170px)[5];
@@ -38,7 +38,7 @@ body {
 }
 
 .linkerUitlijning {
-  width: 7%;
+  width: 5%;
 }
 
 #Filmkeuze {
