@@ -15,7 +15,7 @@ body {
       grid-template-rows: repeat(15, 1fr);
 }
 
-.plaatje {
+.poster {
   height: 200px;
   width: 150px;
   margin: 10px;
